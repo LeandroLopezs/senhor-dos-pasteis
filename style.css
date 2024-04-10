@@ -16,6 +16,8 @@ Paleta de cores:
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+
+
 }
 
 header {
@@ -24,12 +26,13 @@ header {
     text-align: center;
 
 
+
 }
 
 header nav {
 
     text-align: left;
-
+    background-color: var(--cor2);
 
 
 }
@@ -41,19 +44,11 @@ header h1 {
 
     float: right;
     font-size: 30px;
+    background-color: var(--cor2);
 
 }
 
-@media only screen and (max-width: 600px) {
 
-    header h1 {
-
-        display: none;
-
-    }
-
-
-}
 
 header img {
 
@@ -62,7 +57,7 @@ header img {
     padding-bottom: 20px;
     float: right;
     transform: translate(-20%, -20%);
-
+    background-color: var(--cor2);
 
 }
 
@@ -72,6 +67,7 @@ header nav a {
     border: 1px solid var(--cor3);
     color: var(--cor3);
     border-radius: 5px;
+    background-color: var(--cor2);
 }
 
 header nav a:hover {
@@ -80,13 +76,69 @@ header nav a:hover {
     color: var(--cor3);
 }
 
+
+h1 {
+    padding: 10px;
+}
+
+
+main h1 {
+
+    justify-content: bottom;
+}
+
 main {
 
-    padding: 10px;
-    margin: 10px;
-    
+
+    margin-top: 50px;
+    display: block;
 
 }
+
+article {
+
+    float: left;
+
+    width: 50%;
+    height: 50vh;
+
+}
+
+article p {
+    margin: 10px;
+}
+
+article h1 {
+    font-size: 50px;
+    margin: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 30px;
+
+
+}
+
+aside img {
+
+    display: block;
+
+    width: 30vw;
+    height: 50vh;
+
+    padding-left: 125px;
+    padding-bottom: 30px;
+
+
+}
+
+aside {
+
+    width: 50%;
+
+    float: right;
+}
+
 
 :root {
 
@@ -102,4 +154,66 @@ main {
 
 
 
+}
+
+@media only screen and (max-width: 800px) {
+
+    header h1 {
+
+        display: none;
+
+    }
+
+    aside {
+        width: 90%;
+
+    }
+
+    aside img {
+        width: 70%;
+        height: 50vh;
+        padding-top: 200px;
+        padding-left: 50px;
+    }
+
+    article {
+        width: 95vw;
+        height: 10vh;
+    }
+
+    article h1 {
+        font-size: 35px;
+        margin: 50px;
+
+    }
+
+
+}
+
+@media only screen and (min-width:800px) and (max-width: 1200px) {
+
+    header h1 {
+
+        display: none;
+
+    }
+
+    aside {
+        width: 90%;
+        display: inline-block;
+    }
+
+    aside img {
+        width: 65%;
+        height: vh;
+        padding-left: 80px;
+    }
+
+    article {
+        width: 95vw;
+    }
+
+    article h1 {
+        font-size: 35px;
+    }
 }
